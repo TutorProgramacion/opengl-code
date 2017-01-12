@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.4)
 
-project("OpenGL Tutoriales")
+project("Tutoriales OpenGL Moderno")
 
 set(EXTRA_LIB_DIR "library" CACHE STRING "Directorio de bibliotecas externas")
 
@@ -21,11 +21,14 @@ endif()
 
 add_subdirectory(${EXTRA_LIB_DIR}/glfw)
 add_subdirectory(${EXTRA_LIB_DIR}/glad)
+add_subdirectory(${EXTRA_LIB_DIR}/imgui)
 
 include_directories(${EXTRA_LIB_DIR}/glfw/include)
 include_directories(${EXTRA_LIB_DIR}/glad/include)
 include_directories(${EXTRA_LIB_DIR}/glm/include)
+include_directories(${EXTRA_LIB_DIR}/imgui/include)
 
 set(OPENGL_LIBS glad glfw ${GLFW_LIBRARIES})
 
 add_subdirectory(001-3DS)
+add_subdirectory(002-IMGUI)
