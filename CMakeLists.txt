@@ -32,3 +32,4 @@ set(OPENGL_LIBS glad glfw ${GLFW_LIBRARIES})
 
 add_subdirectory(001-3DS)
 add_subdirectory(002-IMGUI)
+add_subdirectory(003-PAR_SHAPES)
